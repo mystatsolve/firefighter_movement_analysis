@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+biomech/output/*.png
+biomech/output/*.csv
+biotech_cam2/output/*.png
+biotech_cam2/output/*.csv
+biotech_cam2/output/*.mp4
+*.mp4
+!create_test_video.py
+.DS_Store
