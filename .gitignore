@@ -1,0 +1,45 @@
+# =============================================================================
+# .gitignore - 소방관 동작 분석 시스템
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Virtual Environment ---
+venv/
+env/
+.env/
+
+# --- MediaPipe Model File ---
+# 모델 파일은 약 9MB로, 별도 다운로드해야 합니다.
+# https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task
+pose_landmarker_full.task
+pose_landmarker_lite.task
+pose_landmarker_heavy.task
+
+# --- Output Files ---
+# 실행 중 생성되는 스냅샷, 녹화 파일
+output/
+*.mp4
+*.avi
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Jupyter ---
+.ipynb_checkpoints/
